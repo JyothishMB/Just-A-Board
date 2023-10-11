@@ -1,0 +1,16 @@
+.stagecolumn {
+    background-color: #ECF0F1;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #E5E7E9;
+    border-width: 1px;
+    padding:0;
+    margin: 1px;
+}
+.stageheader {
+    background-color: #D6DBDF;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}

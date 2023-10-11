@@ -7,22 +7,21 @@ import Features from './Features'
 import Pricing from './Pricing'
 import NoPage from './NoPage'
 import NavigationBar from './NavigationBar'
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
   return (
     <main>
       <BrowserRouter>
       <NavigationBar />
-        <Routes>
-          <Route path="/" element={<Board />} />
-          <Route path="features" element={<Features />} />
-          <Route path="pricing" element={<Pricing />} />
-          <Route path="*" element={<NoPage />} />
-        </Routes>
-      </BrowserRouter>
-
-      <Outlet />
+      <Routes>
+        <Route path="/" element={<Board />}>
+        <Route path="features" element={<Features />} />
+        <Route path="pricing" element={<Pricing />} />
+        <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    <Outlet />
     </main>
   )
 }
